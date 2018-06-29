@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mainOutput: UILabel!
     @IBAction func doStuff(_ sender: Any) {
     }
     @IBOutlet weak var mainInput: UITextField!
