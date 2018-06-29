@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func doStuff(_ sender: Any) {
+    }
     @IBOutlet weak var mainInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()

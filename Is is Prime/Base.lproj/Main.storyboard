@@ -29,6 +29,9 @@
                                 <rect key="frame" x="145" y="282" width="30" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Go!"/>
+                                <connections>
+                                    <action selector="doStuff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHb-jq-5Tp"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n50-LV-d8t">
                                 <rect key="frame" x="16" y="198" width="288" height="30"/>
