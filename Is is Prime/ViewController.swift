@@ -11,9 +11,16 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var mainOutput: UILabel!
+    
     @IBAction func doStuff(_ sender: Any) {
+        if mainInput.text == "" {
+            mainOutput.text = "Oops! You must enter a  valid number."
+            return
+        }
     }
+    
     @IBOutlet weak var mainInput: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
