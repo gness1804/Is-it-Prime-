@@ -13,7 +13,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainOutput: UILabel!
     
     func isItPrime(n: Int) -> Bool {
+        if n == 1 || n == 2 || n == 3 {
+            return true
+        }
+        var i = 2
+        while i < n {
+            if n % i == 0 {
+                return false
+            }
+            i += 1
+        }
         return true
+    }
+    
+    func clearInput() {
+        mainInput.text = ""
     }
     
     @IBAction func doStuff(_ sender: Any) {
@@ -25,10 +39,11 @@ class ViewController: UIViewController {
         let num = Int(str!)
 
         if isItPrime(n: num!) {
-            mainOutput.text = "The number is prime!"
+            mainOutput.text = str! + ": The number is prime!"
         } else {
-            mainOutput.text = "The number is not prime."
+            mainOutput.text = str! + ": The number is not prime."
         }
+        clearInput()
     }
     
     @IBOutlet weak var mainInput: UITextField!
