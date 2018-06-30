@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainOutput: UILabel!
     
     func isItPrime(n: Int) -> Bool {
-        if n == 1 {
+        if n < 2 {
             return false
         }
         var i = 2
